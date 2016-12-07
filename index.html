@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pong | Inicio</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/pong.js"></script>
+    <script src="phonegap.js"></script>
+</head>
+<body class="home">
+<div id="home" style="width:420px; height:220px; background: #fff; background: url('img/pong.png') no-repeat;">
+    <div class="nav">
+    <ul class='parts'>
+      <li><a href="game.html">JOGUE</a></li>
+      <li><a href="about.html">SOBRE</a></li>
+    </ul>
+
+    <div class='settings'>
+      <label for='sound'>SONS: </label>
+      <input type='checkbox' id='sound'>     
+    </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  Game.ready(function() {
+
+    var sound       = document.getElementById('sound');
+
+
+    var pong = Game.start('game', Pong, {
+      sound:       sound.checked    
+    });
+
+    Game.addEvent(sound,       'change', function() { pong.enableSound(sound.checked);           });
+
+
+  });
+  </script>
+
+</body>
+</html>

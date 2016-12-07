@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.hello-world"
+        version   = "1.0.0">
+
+    <name>Pong | Game</name>
+
+    <description>
+        Jogo clássico Pong.
+    </description>
+
+    <author href="http://cbt.ifsp.edu.br/" email="fernandaquerinodelima@hotmail.com">
+        Fernanda Querino de Lima
+    </author>
+	
+    <preference name="orientation" value="landscape" />
+    <preference name="fullscreen" value="true" />
+
+    <preference name="android-minSdkVersion" value="16" />
+    <gap:platform name="android" />
+
+    <icon src="img/icon.png" platform="android" width="57" height="57" density="mdpi" />
+    <gap:splash src="splash.png" />
+</widget>

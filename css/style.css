@@ -1,0 +1,33 @@
+       body{
+        width:420px;
+        height: 220px;
+        overflow: hidden;
+        background-color: #000;
+       }
+       #home{
+            color:#fff;
+        }
+        #home ul li{
+            list-style: none;
+            
+        }
+        #home a{
+            color:#fff;
+            text-decoration: none;
+            font-size: 35px;
+            top: -560px;
+            font-weight: bold;
+
+        }
+        .settings{
+            font-weight: bold;
+            font-size: 35px;
+            margin-left: 40px;   
+        }
+        .nav{
+            padding-top: 500px;
+            margin-left: 510px;
+        }
+        .about{
+
+        }
